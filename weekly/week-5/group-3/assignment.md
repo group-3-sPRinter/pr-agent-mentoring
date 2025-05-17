@@ -39,10 +39,12 @@ PR-Agent의 /algo 디렉터리는 기능의 중심, 핵심 알고리즘, 유틸�
     - `langchain` 라이브러리 미설치 시 `ImportError`가 숨겨져 런타임 `NameError`로 이어져 사용자 디버깅을 어렵게 함.
     - `LangChainOpenAIHandler.chat_completion` 메소드 시그니처에 `BaseAiHandler`의 추상 메소드에 정의된 `img_path` 파라미터 누락으로 LSP 위반.
     - (참고) `async def chat_completion` 내 동기적 `self.chat()` 호출로 인한 이벤트 루프 블로킹 문제 인지 (별도 이슈로 다룰 예정).
+
   - **주요 작업**
     - `LangChainOpenAIHandler.__init__`에서 `langchain` 미설치 시 명시적 `ImportError` 발생시켜 오류 리포팅 명확화.
     - `LangChainOpenAIHandler.chat_completion` 시그니처에 `img_path: Optional[str] = None` 추가 및 미사용 시 경고 로깅.
     - 모든 `BaseAiHandler` 구현체의 `chat_completion` 시그니처에 `img_path` 파라미터를 추가하여 인터페이스 일관성 확보.
+
   - **기대 효과**
     - `langchain` 의존성 누락 시 사용자에게 명확한 오류 메시지 제공.
     - 모든 AI 핸들러에서 `chat_completion` 메소드 시그니처 일관성을 확보하여 LSP 준수 및 타입 안정성 향상.
@@ -54,9 +56,11 @@ PR-Agent의 /algo 디렉터리는 기능의 중심, 핵심 알고리즘, 유틸�
   - **내용**
     - `generate_full_patch()` 함수가 파일 스킵 여부 확인, 토큰 제한 검증, 패치 포맷팅, 파일 목록 관리, 로깅 등 다중 책임을 가져 코드 복잡성 및 유지보수 어려움 발생.
     - 중첩된 조건문으로 가독성이 낮고, 큰 함수 크기로 인해 테스트 용이성 저하 및 코드 재사용이 제한됨.
+
   - **주요 작업**
     - `generate_full_patch()` 함수의 각 논리적 단위를 명확한 역할을 가진 여러 헬퍼 함수로 분리 (예: `should_skip_file()`, `is_token_limit_exceeded()`, `is_patch_too_large()`, `format_patch()`).
     - 메인 `generate_full_patch()` 함수는 분리된 헬퍼 함수들을 호출하는 방식으로 재구성하여 로직 흐름을 단순화.
+
   - **기대 효과**
     - 각 헬퍼 함수의 목적이 명확해져 코드 가독성 향상.
     - 특정 로직 수정 시 해당 헬퍼 함수만 변경하면 되어 유지보수 용이성 증대.
