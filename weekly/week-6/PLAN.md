@@ -8,6 +8,7 @@
 
 - 조별 기여 아이디어 구현 및 PR 제출
 - PR은 조별 repo -> qodo-ai/pr-agent 로 직접 생성.
+  - 생성전 멘토 피드백 요청   
   - ossca-2025/pr-agent 거치지 않음.
 
 
