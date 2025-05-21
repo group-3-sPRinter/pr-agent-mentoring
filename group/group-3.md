@@ -6,6 +6,8 @@
 
 
 ## 👥 조원 소개
+- 팀 그룹:
+  - 3조 [sPRinter](https://github.com/group-3-sPRinter/pr-agent)
 - 조장: 박성호
   - GitHub: [@HOPARKSUNG](https://github.com/HOPARKSUNG)
 - 조원:
@@ -14,15 +16,13 @@
   - 손찬우 [@gagip](https://github.com/gagip)
   - 이승민 [@Akileox](https://github.com/Akileox)
   - 장현상 [@TaskerJang](https://github.com/TaskerJang)
-- 팀 그룹:
-  - 3조 [sPRinter](https://github.com/group-3-sPRinter/pr-agent)
 
 ## 📅 정기 모임 일정
 - 요일: 목요일
 - 시간: 20시 ~ 21시
 - 장소:  
   - 온라인 (Discord)  
-  - 오프라인 (5/15 목 OpenUP:Ground1)
+  - 오프라인 (OpenUP 서초)
 - 회의록:  
   - [노션 회의록](https://sunghothegamebird.notion.site/2025-OSSCA-PR-Agnet-3-sPRinter-1d92ec95ce928080a5abeb2e03b5247d?pvs=4)
 
@@ -43,7 +43,7 @@
 | 5/11 (정기 4차)|   ✅   |   ✅   |   ✅   |   ✅   |   ✅   |   ✅   |
 | 5/15 (조별 5차)|   ✅   |   ✅   |   ✅   |   ✅   |   ✅   |   ✅   |
 | 5/18 (정기 5차)|   ✅   |   ✅   |   ❎   |   ✅   |   ✅   |   ✅   |
-| 5/22 (조별 6차)|        |        |        |        |        |        |
+| 5/21 (조별 6차)|   ✅   |   ✅   |   ✅   |   ✅   |   ✅   |   ✅   |
 | 5/25 (정기 6차)|        |        |        |        |        |        |
 
 ## 🎯 조별 목표
