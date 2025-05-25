@@ -1,12 +1,12 @@
 # 6주차 조별 과제 (3조 - sPRinter)
 
-## 3조 GitHub Organization
+## GitHub Organization
 
-- [sPRinter](https://github.com/group-3-sPRinter)
+- [3조 - sPRinter](https://github.com/group-3-sPRinter)
 
 ## 3조 Notion
 
-3조 sPRinter의 모든 활동 기록  
+3조 sPRinter의 **모든 활동 기록**  
 (출석부, 회의록, GitHub, 발표 내용, 개인별 학습 내용 모음)은  
 아래 Notion 페이지에서 확인하실 수 있습니다.
 
@@ -14,12 +14,12 @@
 
 ## 참여 인원
 
-- 강경만
-- 박성호 (조장)
-- 서강문
-- 손찬우
-- 이승민
-- 장현상
+- 강경만 [@Kkan9ma](https://github.com/Kkan9ma)
+- 박성호 [@HOPARKSUNG](https://github.com/HOPARKSUNG)
+- 서강문 [@KangmoonSeo](https://github.com/KangmoonSeo)
+- 손찬우 [@gagip](https://github.com/gagip)
+- 이승민 [@Akileox](https://github.com/Akileox)
+- 장현상 [@TaskerJang](https://github.com/TaskerJang)
 
 ---
 
@@ -49,14 +49,14 @@
 
 ---
 
-## 3조 (sPRinter) 기여 활동: `algo` 디렉터리 리팩토링
+## 3조 (sPRinter) 최종 기여 활동: `algo` 디렉터리 리팩토링
 
 ---
 
 ### 활동 1: `Token Handler` 개선
 
-- **담당자**: 강경만
-- **코드 리뷰**: 3조 전원
+- **담당자**: **강경만**
+- **코드 리뷰**: **3조 전원**
 - **목표**: `pr_agent/algo/token_handler.py` 내의 `count_tokens` 메서드 구조를 개선하여 확장성과 유지보수성을 높입니다.
 
 #### 문제 제기: Issue #1782
@@ -78,7 +78,7 @@
 
 #### 팀 내부 코드 리뷰: Improve/token handler #1
 
-- **내부 PR**: [group-3-sPRinter/pr-agent#1](https://github.com/group-3-sPRinter/pr-agent/pull/1) (현재는 닫힘)
+- **내부 PR**: [group-3-sPRinter/pr-agent#1](https://github.com/group-3-sPRinter/pr-agent/pull/1)
 
 **주요 변경 사항**
 
@@ -143,8 +143,8 @@
 
 ### 활동 2: `AI Handler` 예외 처리 및 재시도 로직 개선
 
-- **담당자**: 서강문
-- **코드 리뷰**: 3조 전원
+- **담당자**: **서강문**
+- **코드 리뷰**: **3조 전원**
 - **목표**: `pr_agent/algo/ai_handlers/*.py` 내의 예외 처리 순서 및 `@retry` 데코레이터 동작을 수정하여, `RateLimitError` 발생 시 불필요한 재시도를 방지하고 의도된 대로 즉시 예외를 발생시키도록 개선합니다.
 
 #### 문제 제기 1: Issue #1802 - `LiteLLMAIHandler` 예외 처리 순서 오류
@@ -221,8 +221,8 @@
 
 ### 활동 3: `utils.py`의 `clip_tokens` 함수 테스트 및 문서화 강화
 
-- **담당자**: 장현상
-- **코드 리뷰**: 3조 전원
+- **담당자**: **장현상**
+- **코드 리뷰**: **3조 전원**
 - **목표**: `pr_agent/algo/utils.py` 내의 `clip_tokens` 유틸리티 함수의 단위 테스트를 추가하고, 문서(docstring)를 개선하여 코드의 신뢰성과 개발자 경험을 향상시킵니다.
 
 #### 문제 제기: Issue #1793 - `clip_tokens` 테스트 및 문서화 필요성
