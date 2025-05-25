@@ -1,4 +1,4 @@
-## 🗓️ 5주차 계획: Let's contribute
+## 🗓️ 6주차 계획: Let's contribute
 [6주차 과제 계획 보기](PLAN.md)
 
 ### 🎯 학습 목표
